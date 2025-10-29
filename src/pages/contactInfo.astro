@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+---
+
+<Layout
+    title="Contact information"
+    description="How to contact me"
+    draft={false}
+    center={false}
+>
+    <p>Please check the links below if you want to get in touch with me.</p>
+
+    <ul>
+        {
+            /* }<li>Email: <a href="mailto:csaba.babos@yourweb.hu">csaba.babos@yourweb.hu</a></li> */
+        }
+        <li>
+            Twitter: <a target="_blank" href="https://twitter.com/babosc"
+                >https://twitter.com/babosc</a>
+        </li>
+        <li>
+            GitHub: <a target="_blank" href="https://github.com/cbabos"
+                >https://github.com/cbabos</a>
+        </li>
+        <li>
+            LinkedIn: <a
+                target="_blank"
+                href="https://www.linkedin.com/in/csaba-babos-75375256/"
+                >https://www.linkedin.com/in/csaba-babos-75375256/</a>
+        </li>
+        <li>
+            YouTube: <a
+                target="_blank"
+                href="https://www.youtube.com/BabosCsaba/"
+                >https://www.youtube.com/BabosCsaba</a>
+        </li>
+    </ul>
+</Layout>
