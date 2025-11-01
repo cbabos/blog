@@ -34,5 +34,5 @@ jobs:
          username: ${{ secrets.SSH_USER }}
          key: ${{ secrets.SSH_SECRET }}
          port: ${{ secrets.SSH_PORT }}
-         source: "dist/*"
+         source: "dist/"
          target: "~/sites/blog/"
