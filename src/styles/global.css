@@ -1,4 +1,4 @@
-@import url('../../public/css/clash-grotesk.css');
+@import url('/css/clash-grotesk.css');
 
 html, body {
 	margin: 0;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, a, li, ul, ol, blockquote, code, pre, span, div, article, section, main, footer, header, nav, form, input, textarea, button {
-	font-family: "ClashGrotesk-SuperLight", sans-serif;
+	font-family: "ClashGrotesk-Extralight", sans-serif;
 	font-weight: 100;
 }
 
