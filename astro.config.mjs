@@ -9,7 +9,8 @@ export default defineConfig({
 	site: 'https://yourweb.hu',
 	integrations: [mdx(), sitemap()],
 	image: {
-		layout: 'fixed',
+		layout: 'constrained',
+        responsiveStyles: true,
 	},
 	redirects: {
 		"/": {
