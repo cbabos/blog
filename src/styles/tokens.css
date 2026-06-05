@@ -1,55 +1,55 @@
 /* src/styles/tokens.css */
 :root {
-    /* Dark (default) */
-    --bg:        #0B0E14;   /* deep onyx */
-    --bg-soft:   #11151C;   /* panels */
-    --text:      #E6E9EF;   /* body text */
-    --text-dim:  #AAB2BF;   /* meta */
-    --border:    #222736;   /* lines */
+    /* Modern AI Paradigm - Dark Mode */
+    --bg:        #000000;   /* Pure black for deep contrast */
+    --bg-soft:   #0A0A0A;   /* Surface subtle contrast */
+    --text:      #EDEDED;   /* Crisp off-white */
+    --text-dim:  #888888;   /* Muted secondary text */
+    --border:    #1F1F1F;   /* Ultra-thin, subtle borders */
   
-    --accent:        #6AAEFF; /* electric blue */
-    --accent-600:    #3784F6;
-    --accent-700:    #2A6BD4;
+    --accent:        #FFFFFF; /* High contrast white accent */
+    --accent-600:    #E5E5E5;
+    --accent-700:    #BDBDBD;
   
     --ok:   #4ADE80;
     --warn: #FBBF24;
     --err:  #F87171;
   
-    --link:       var(--accent);
-    --link-hover: #9BC6FF;
+    --link:       #FFFFFF;
+    --link-hover: #A0A0A0;
   
-    --code-bg:   #0F1320;
-    --inline-bg: #161B26;
-    --quote:     #1A2030;
+    --code-bg:   #0C0C0C;
+    --inline-bg: #161616;
+    --quote:     #0F0F0F;
   
-    --shadow:    0 10px 30px rgba(0,0,0,.35);
+    --shadow:    0 0 0 1px var(--border);
   
-    --radius-s:  .35rem;
-    --radius-m:  .75rem;
-    --radius-l:  1rem;
+    --radius-s:  .5rem;
+    --radius-m:  1rem;
+    --radius-l:  1.5rem;
   
-    --container: 1100px;
+    --container: 900px;
   }
   
-  /* Light theme */
+  /* Light theme - Retained but modernized */
   :root[data-theme="light"] {
-    --bg:        #F7F8FA;
-    --bg-soft:   #FFFFFF;
-    --text:      #1A1F2C;
-    --text-dim:  #5B6475;
-    --border:    #E6E9EE;
+    --bg:        #FFFFFF;
+    --bg-soft:   #F9F9F9;
+    --text:      #111111;
+    --text-dim:  #666666;
+    --border:    #E5E5E5;
   
-    --accent:        #2A6BD4;
-    --accent-600:    #1F56AE;
-    --accent-700:    #184487;
+    --accent:        #000000;
+    --accent-600:    #222222;
+    --accent-700:    #444444;
   
     --ok:   #16A34A;
     --warn: #D97706;
     --err:  #DC2626;
   
-    --code-bg:   #F3F5F8;
-    --inline-bg: #EDF1F7;
-    --quote:     #F0F4FB;
+    --code-bg:   #F2F2F2;
+    --inline-bg: #EDEDED;
+    --quote:     #FBFBFB;
   
-    --shadow:    0 10px 30px rgba(16,24,40,.08);
+    --shadow:    0 0 0 1px var(--border);
   }

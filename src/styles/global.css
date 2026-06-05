@@ -25,7 +25,15 @@ main {
 
 main article, section.articles {
 	max-width: var(--container);
-	padding: 2em 2em;
+	padding: 2em 1.5em;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	main article, section.articles {
+		padding: 1em 1em;
+	}
 }
 
 main article.center {
@@ -48,36 +56,44 @@ p, a, li, ul, ol, blockquote, pre, span, div, article, section, main, footer, he
 }
 
 blockquote {
-	border-left: 4px solid var(--border);
-	padding: 1em;
-	margin: 1em;
+	border-left: 2px solid var(--border);
+	padding: 1.5em;
+	margin: 1.5em 0;
 	background-color: var(--quote);
+	border-radius: 0 var(--radius-s) var(--radius-s) 0;
 }
 
 article img {
-	border-radius: var(--radius-s);
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--radius-m);
 	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
 }
 
 hr {
-	margin: 2em 1em;
-	border: 1px solid var(--border);
+	margin: 3em 0;
+	border: 0;
+	border-top: 1px solid var(--border);
 }
 
 /* Code block styling */
 pre {
-	background-color: var(--code-bg, #1e1e1e);
-	padding: 1em;
-	border-radius: var(--radius-s, 4px);
+	background-color: var(--code-bg);
+	padding: 1.25em;
+	border-radius: var(--radius-s);
 	overflow-x: auto;
-	margin: 1em 0;
+	margin: 1.5em 0;
 	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+	max-width: 100%;
 }
 
 code {
 	font-family: "Consolas", "Monaco", "Courier New", monospace;
 	font-size: 0.9em;
 	line-height: 1.5;
+	word-break: break-word;
 }
 
 pre code {
