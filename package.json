@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.14.7",
     "reveal.js": "^5.2.1",
-    "sharp": "^0.34.3",
+    "sharp": "^0.35.1",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
