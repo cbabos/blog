@@ -8,6 +8,12 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "pnpm": {
+    "overrides": {
+      "fast-uri": "^3.1.2",
+      "postcss": "^8.5.10"
+    }
+  },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^6.0.2",
