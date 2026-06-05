@@ -1,0 +1,60 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<nav>
+		<h2><a href="/">&lt; Back to the site</a></h2>
+	</nav>
+</header>
+
+<style>
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: rgba(var(--bg-soft), 0.1);
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: var(--container);
+		flex-grow: 1;
+        padding: 0em 2em;
+	}
+
+	h2 {
+		margin: 0;
+        font-size: .2em;
+		padding: 1.2em 0;
+	}
+
+	a.active {
+		color: var(--accent-700);
+		border-bottom: 2px solid var(--accent-700);
+	}
+
+	div a {
+		padding: 2em 1em;
+	}
+
+    @media (max-width: 768px) {
+        nav {
+            flex-flow: row;
+        }
+        h2 {
+            padding: 0em;
+        }
+        nav div {
+            flex-direction: row;
+            display: flex;
+
+        }
+
+        div a {
+            padding: .5em .5em;
+        }
+    }
+</style>

@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-p, a, li, ul, ol, blockquote, code, pre, span, div, article, section, main, footer, header, nav, form, input, textarea, button {
+p, a, li, ul, ol, blockquote, pre, span, div, article, section, main, footer, header, nav, form, input, textarea, button {
 	font-family: "ClashGrotesk-Extralight", sans-serif;
 	font-weight: 100;
 }
@@ -62,6 +62,43 @@ article img {
 hr {
 	margin: 2em 1em;
 	border: 1px solid var(--border);
+}
+
+/* Code block styling */
+pre {
+	background-color: var(--code-bg, #1e1e1e);
+	padding: 1em;
+	border-radius: var(--radius-s, 4px);
+	overflow-x: auto;
+	margin: 1em 0;
+	border: 1px solid var(--border);
+}
+
+code {
+	font-family: "Consolas", "Monaco", "Courier New", monospace;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+pre code {
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	font-family: inherit;
+}
+
+/* Ensure any spans inside code use monospace */
+pre code span,
+code span {
+	font-family: "Consolas", "Monaco", "Courier New", monospace !important;
+}
+
+/* Inline code */
+:not(pre) > code {
+	background-color: var(--code-inline-bg, #f0f0f0);
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 0.85em;
 }
 
 a {
