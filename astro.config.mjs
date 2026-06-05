@@ -18,4 +18,7 @@ export default defineConfig({
 			status: 301,
 		},
 	},
+    build: {
+        assets: 'node_modules/reveal.js/dist/reveal.js',
+    },
 });

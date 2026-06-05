@@ -21,14 +21,26 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       astro:
+<<<<<<< HEAD
         specifier: ^5.15.6
         version: 5.15.6(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3)(yaml@2.8.1)
+=======
+        specifier: ^5.14.7
+        version: 5.14.7(@types/node@24.9.0)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.8.1)
+      reveal.js:
+        specifier: ^5.2.1
+        version: 5.2.1
+>>>>>>> main
       sharp:
         specifier: ^0.34.3
         version: 0.34.4
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
+    devDependencies:
+      '@types/reveal.js':
+        specifier: ^5.2.1
+        version: 5.2.1
 
 packages:
 
@@ -606,6 +618,9 @@ packages:
 
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+
+  '@types/reveal.js@5.2.1':
+    resolution: {integrity: sha512-egr+amW5iilXo94kEGyJv24bJozsu/XAOHnhMHLnaJkHVxoui2gsWqzByaltA5zfXDTH2F4WyWnAkhHRcpytIQ==}
 
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
@@ -1505,8 +1520,17 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
+<<<<<<< HEAD
   rollup@4.53.2:
     resolution: {integrity: sha512-MHngMYwGJVi6Fmnk6ISmnk7JAHRNF0UkuucA0CUW3N3a4KnONPEZz+vUanQP/ZC/iY1Qkf3bwPWzyY84wEks1g==}
+=======
+  reveal.js@5.2.1:
+    resolution: {integrity: sha512-r7//6mIM5p34hFiDMvYfXgyjXqGRta+/psd9YtytsgRlrpRzFv4RbH76TXd2qD+7ZPZEbpBDhdRhJaFgfQ7zNQ==}
+    engines: {node: '>=18.0.0'}
+
+  rollup@4.52.5:
+    resolution: {integrity: sha512-3GuObel8h7Kqdjt0gxkEzaifHTqLVW56Y/bjN7PSQtkKr0w3V/QYSdt6QWYtd7A1xUtYQigtdUfgj1RvWVtorw==}
+>>>>>>> main
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -2505,6 +2529,8 @@ snapshots:
   '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
+
+  '@types/reveal.js@5.2.1': {}
 
   '@types/sax@1.2.7':
     dependencies:
@@ -3914,7 +3940,13 @@ snapshots:
 
   reusify@1.1.0: {}
 
+<<<<<<< HEAD
   rollup@4.53.2:
+=======
+  reveal.js@5.2.1: {}
+
+  rollup@4.52.5:
+>>>>>>> main
     dependencies:
       '@types/estree': 1.0.8
     optionalDependencies:
