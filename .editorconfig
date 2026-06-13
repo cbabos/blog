@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 
 # Default spacing
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 # Markdown files
 [*.md]
@@ -21,11 +21,11 @@ indent_size = 2
 
 # JavaScript, TypeScript, Astro, JSON files
 [*.{js,jsx,ts,tsx,astro,json}]
-indent_size = 4
+indent_size = 2
 
 # CSS, SCSS, LESS files
 [*.{css,scss,less}]
-indent_size = 4
+indent_size = 2
 
 # YAML files
 [*.{yml,yaml}]
@@ -37,4 +37,4 @@ indent_size = 2
 
 # HTML files
 [*.{htm,html}]
-indent_size = 4
+indent_size = 2
